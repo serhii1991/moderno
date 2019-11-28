@@ -395,3 +395,173 @@
     }
   }
 }
+
+/********************************* FOOTER STYLE ***************************************/
+
+.footer {
+  background-color: $bg;
+  &__copy {
+    border-top: 1px solid #424d53;
+    &-text {
+      text-align: center;
+      color: #919699;
+      font-size: 15px;
+      padding: 25px 0 25px;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 80px;
+  }
+  &__col {
+    max-width: 270px;
+    &-title {
+      font-size: 22px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      color: #fff;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        width: 51px;
+        height: 3px;
+        background-color: $green;
+      }
+    }
+    &-text {
+      color: #b7c3c8;
+      margin-bottom: 30px;
+    }
+    &-menu {
+      max-width: 220px;
+    }
+    &-list {
+      a {
+        margin-bottom: 13px;
+        color: #b7c3c8;
+        padding-left: 22px;
+        position: relative;
+        &::before {
+          content: '\f054';
+          position: absolute;
+          color: $green;
+          left: 0;
+          font-size: 12px;
+          font-family: 'icomoon', sans-serif;
+        }
+      }
+    }
+  }
+  &__info {
+    margin-top: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      content: '\f041';
+      font-family: 'icomoon', sans-serif;
+      position: absolute;
+      color: $green;
+      font-size: 18px;
+      left: 0;
+
+    }
+    &-phone {
+      &::before {
+        content: '\f095';
+      }
+    }
+  }
+	&__social-link {
+		margin-bottom: 33px;
+		li {
+			display: inline-block;
+			& + li {
+				margin-left: 7px;
+			}
+			a {
+				width: 28px;
+				height: 28px;
+				background-image: url(../images/css_sprites.png);
+				&.link-twitter {
+					background-position: -28px 0;
+				}
+				&.youtube {
+					background-position: 0 -28px;
+				}
+				&.link-pinterest {
+					background-position: -28px -28px;
+				}
+				&.link-linkedin {
+					background-position: -56px 0;
+				}
+			}
+		}
+	}
+	&__form {
+		position: relative;
+		&-title {
+			margin-bottom: 15px;
+			color: #ffffff;
+			font-size: 20px;
+		}
+		input {
+			background-color: #2f3c43;
+			border: none;
+			display: block;
+			width: 100%;
+			height: 40px;
+			color: #fff;
+			font-size: 14px;
+			padding-left: 13px;
+			padding-right: 50px;
+			&::placeholder {
+				color: #697378;
+			}
+		}
+		button {
+			bottom: 0;
+			right: 0;
+			background-color: $green;
+			border: none;
+			height: 40px;
+			width: 43px;
+			cursor: pointer;
+			position: absolute;
+			&::before {
+				content: '\f124';
+				position: absolute;
+				font-family: 'icomoon', sans-serif;
+				color: #ffffff;
+				font-size: 20px;
+				top: 9px;
+				left: 13px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
