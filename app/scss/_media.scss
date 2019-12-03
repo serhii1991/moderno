@@ -1,0 +1,238 @@
+/*========================================== MEDIA MAX-WIDTH: 1150PX================================================*/
+
+@media (max-width: 1150px) {
+	.header {
+		&__text {
+			display: none;
+		}
+	}
+
+	.footer {
+		&__inner {
+			flex-wrap: wrap;
+		}
+		&__col {
+			&-adress {
+				min-width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+/*========================================== MEDIA MAX-WIDTH: 900PX================================================*/
+
+@media (max-width: 900px) {
+	.footer {
+		&__col {
+			&-social {
+				min-width: 100%;
+				margin-top: 30px;
+			}
+			&-menu {
+				& + & {
+					margin-left: 50px;
+				}
+			}
+		}
+		&__inner {
+			justify-content: flex-start;
+		}
+	}
+}
+
+/*========================================== MEDIA MAX-WIDTH: 840PX================================================*/
+
+@media (max-width: 840px) {
+	.menu__list {
+		display: none;
+		background-color: $bg;
+		position: absolute;
+		top: 150px;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		text-align: center;
+		padding-bottom: 30px;
+		li {
+			display: block;
+			&:first-child {
+				border-top: 1px solid #fff;
+			}
+			& + li {
+				margin-left: 0;
+			}
+			a {
+				display: block;
+				padding: 10px 0;
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
+	.menu__btn {
+		display: block;
+		width: 30px;
+		cursor: pointer;
+		div {
+			background-color: #fff;
+			height: 3px;
+			& + div {
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+/*========================================== MEDIA MAX-WIDTH: 640PX================================================*/
+
+@media (max-width: 640px) {
+	.notification__box,
+	.message__box {
+		display: none;
+	}
+	.basked__menu {
+		right: auto;
+	}
+}
+
+/*========================================== MEDIA MAX-WIDTH: 540PX================================================*/
+
+@media (max-width: 540px) {
+	.footer {
+		&__col {
+			min-width: 100%;
+			&-menu {
+				& + & {
+					margin-left: 0;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
+/*========================================== MEDIA MAX-WIDTH: 520PX================================================*/
+
+@media (max-width: 520px) {
+	.header { 
+		position: relative;
+		&__btn-menu {
+			display: block;
+			width: 70px;
+			height: 70px;
+			background-color: $bg;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 4;
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 36px;
+				color: #fff;
+			}
+		}
+		&__box {
+			transition: all .5s;
+			position: absolute;
+			background-color: #fff;
+			height: 70px;
+			left: 100%;
+			right: -100%;
+			z-index: 2;
+			&.active {
+				left: 70px;
+				right: 90px;
+			}
+		}
+		&__logo {
+			margin-left: 60px;
+		}
+		&__top-inner {
+			height: 70px;
+		}
+		.user__menu {
+			top: 59px;
+		}
+		.basked__menu {
+			top: 52px;
+		}
+	}
+	.menu__btn {
+		position: absolute;
+		top: 24px;
+		div {
+			background-color: $bg;
+		}
+	}
+	.menu__list {
+		top: 70px;
+	}
+}
+
+/*========================================== MEDIA MAX-WIDTH: 495PX================================================*/
+
+@media (max-width: 495px) {
+	.user {
+		padding-right: 0;
+		&__info {
+			display: none;
+		}
+		&__images {
+			right: 0;
+			margin-left: 15px;
+		}
+	}
+}
+
+/*========================================== MEDIA MAX-WIDTH: 390PX================================================*/
+
+@media (max-width: 390px) {
+	.header {
+		&__box {
+			&.active {
+				left: 47px;
+			}
+		}
+	}
+
+	.basked__box {
+		margin-left: 0;
+	}
+
+	.menu__btn {
+		margin-left: 10px;
+	}
+}
+
+/*========================================== MEDIA MAX-WIDTH: 360PX================================================*/
+
+@media (max-width: 360px) {
+	.user {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.header{
+		&__logo {
+			margin-left: 50px;
+		}
+	}
+	
+	.basked {
+		margin-right: 10px;
+		&__menu {
+			left: -20px;
+		}
+	}
+}
+
+/*========================================== MEDIA MIN-WIDTH: 840PX================================================*/
+
+@media (min-width: 841px) {
+	.menu__list {
+		display: block !important;
+	}
+}
