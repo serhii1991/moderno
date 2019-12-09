@@ -2401,9 +2401,6 @@ button.icon {
 			padding-right: 15px;
 			color: #444;
 			padding-top: 5px;
-			&::placeholder {
-				color: #707070;
-			}
 			span {
 				color: $green;
 			}
@@ -2417,6 +2414,9 @@ button.icon {
 			height: 40px;
 			background-color: #f9f9f9;
 			padding: 0 18px;
+			&::placeholder {
+				color: #707070;
+			}
 		}
 		textarea {
 			resize: none;
@@ -2507,7 +2507,136 @@ button.icon {
 	}
 }
 
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++						WIDTHRAWALS PAGE								+++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+/********************************* WIDTHRAWALS STYLE ***************************************/
+
+.withdrawals {
+	background-color: $grey;
+	padding-bottom: 110px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__col {
+		max-width: 570px;
+		width: 100%;
+		background-color: #fff;
+		border-bottom: 1px solid #dedede;
+		height: 100%;
+	}
+	&__title {
+		padding: 18px 32px 24px;
+		border-bottom: 1px solid #dedede;
+		margin-bottom: 30px;
+		color: $bg;
+		font-weight: 500;
+		font-size: 24px;
+	}
+	&__content {
+		padding-left: 35px;
+		padding-right: 40px;
+		button {
+			margin-bottom: 50px;
+			color: #fff;
+			background-color: $green;
+			border: none;
+			padding: 15px 36px;
+			cursor: pointer;
+		}
+		&-items {
+			padding-bottom: 35px;
+		}
+		&-item {
+			display: flex;
+			height: 42px;
+			align-items: center;
+			font-size: 13px;
+			color: #444;
+			&:nth-child(odd) {
+				background-color: #f9f9f9;
+			}
+		}
+		&-date {
+			width: 154px;
+			padding-left: 20px;
+			font-weight: 500;
+		}
+		&-email {
+			width: 180px;
+			font-weight: 500;
+		}
+		&-price {
+			width: 70px;
+			font-weight: 700;
+		}
+		&-status {
+			width: 88px;
+			font-weight: 700;
+			&.withdrawals__content-paid {
+				color: $green;
+			}
+		}
+	}
+	&__form-line {
+		margin-bottom: 25px;
+		label {
+			display: block;
+			width: 100%;
+			font-weight: 500;
+			font-size: 16px;
+			margin-bottom: 15px;
+			color: $bg;
+			&::placeholder {
+				color: #707070;
+			}
+			span {
+				color: $green;
+			}
+		}
+		input,
+		select {
+			width: 100%;
+			display: block;
+			border:1px solid #d7d7d7;
+			height: 40px;
+			background-color: #f9f9f9;
+			padding: 0 18px;
+		}
+		.jq-selectbox {
+			width: 100%;
+			&__select {
+				height: 40px;
+				padding: 0 18px;
+				border: solid 1px #d7d7d7;
+				border-bottom-color: #d7d7d7;
+				border-radius: 0;
+				background: #f9f9f9;
+				box-shadow: none;
+				text-shadow: none;
+				color: #707070;
+				font-family: "Roboto", sans-serif;
+				line-height: 40px;
+			}
+			&__trigger{
+				border-left: none;
+				&-arrow {
+					border: none;
+					font-size: 15px;
+					right: 20px;
+					line-height: 40px;
+					top: 0;
+					&::before {
+						content: "\f0d7";
+						font-family: "icomoon";
+					}
+				}
+			}
+		}
+	}
+}
 
 
 
