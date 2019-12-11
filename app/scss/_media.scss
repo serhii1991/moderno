@@ -108,14 +108,25 @@
 			display: block;
 			.aside__item {
 				width: 100%;
+				& + .aside__item {
+					margin-left: 30px;
+				}
 			}
 		}
 		&__aside {
 			margin-right: 0;
+			display: flex;
 		}
 	}
 	.top-sellers {
 		display: none;
+	}
+	.price-range {
+		button {
+			&::before {
+				display: none;
+			}
+		}
 	}
 
 	//home page
@@ -407,6 +418,15 @@
 			padding: 10px 30px 8px;
 		}
 	}
+
+	//new-item
+	.price-range {
+		button {
+			&::before {
+				display: block;
+			}
+		}
+	}
 }
 
 /*========================================== MEDIA MAX-WIDTH: 700PX================================================*/
@@ -431,6 +451,15 @@
 			margin-right: auto;
 			margin-left: auto;
 			margin-bottom: 20px;
+		}
+	}
+
+	//new-item
+	.price-range {
+		button {
+			&::before {
+					left: 40px;
+			}
 		}
 	}
 }
@@ -651,6 +680,22 @@
 	.product-slider .slick-dots li {
 		margin-left: 2px;
 		margin-right: 2px;
+	}
+
+	//new-item
+	.product-page {
+		&__inner {
+			.aside__item {
+				width: 100%;
+				& + .aside__item {
+					margin-left: 0;
+				}
+			}
+		}
+		&__aside {
+			margin-right: 0;
+			display: block;
+		}
 	}
 }
 
